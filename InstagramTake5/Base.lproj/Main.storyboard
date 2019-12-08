@@ -102,6 +102,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8OO-ww-KXi"/>
                                 </constraints>
                                 <state key="normal" title="ログイン" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleLoginButton:" destination="Pnh-nb-OeH" eventType="touchUpInside" id="ZWZ-Lf-zSu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-Ub-zKp">
                                 <rect key="frame" x="57" y="294" width="300" height="40"/>
@@ -109,6 +112,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="GwL-lX-Z4P"/>
                                 </constraints>
                                 <state key="normal" title="アカウント作成" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCreateAccountButton:" destination="Pnh-nb-OeH" eventType="touchUpInside" id="eg9-Y5-AiQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アカウント作成時は表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzF-L1-rpe">
                                 <rect key="frame" x="57" y="204" width="300" height="30"/>
@@ -135,6 +141,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dfv-LQ-3rG"/>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="bzF-L1-rpe" id="NMZ-PR-Pe7"/>
+                        <outlet property="mailAddressTextField" destination="FTU-1p-cy1" id="hPe-uK-nAm"/>
+                        <outlet property="passwordTextField" destination="m5X-40-9Y2" id="I18-Wo-aT2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAY-0n-jzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
