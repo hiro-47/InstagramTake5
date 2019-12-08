@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" title=" ライブラリ" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleLibraryButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="BeU-7Q-ajN"/>
+                                    <action selector="handleLibraryButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="ylU-w6-daa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s3-gw-SjY">
@@ -50,7 +50,7 @@
                                 </constraints>
                                 <state key="normal" title="カメラ" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCameraButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="vqc-J8-qtK"/>
+                                    <action selector="handleCameraButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="ovt-f3-YJc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeB-vW-s0o">
@@ -60,7 +60,7 @@
                                 </constraints>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCancelButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="ous-uc-fpL"/>
+                                    <action selector="handleCancelButton:" destination="et9-Hq-7z9" eventType="touchUpInside" id="luZ-c5-MeY"/>
                                 </connections>
                             </button>
                         </subviews>
