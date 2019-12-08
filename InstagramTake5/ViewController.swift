@@ -5,7 +5,7 @@
 //  Created by KATAOKA  HIROTAKA on 2019/12/08.
 //  Copyright © 2019 hirotaka.kataoka. All rights reserved.
 //
-
+import Firebase
 import UIKit
 import ESTabBarController
 
@@ -56,4 +56,14 @@ class ViewController: UIViewController {
             self.present(imageViewController!, animated: true, completion: nil)
         }, at: 1)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // currentUserがnilならログインしていない
+        if Auth.auth().currentUser == nil {
+            // ログインしていないときの処理
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+            self.present(loginViewController!, animated: true, completion: nil)
+        }
+}
 }
