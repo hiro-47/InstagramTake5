@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		F6CB7654239D06A30043E775 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB7653239D06A30043E775 /* ImageSelectViewController.swift */; };
 		F6CB7656239D06B50043E775 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB7655239D06B50043E775 /* PostViewController.swift */; };
 		F6CB7658239D06C50043E775 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB7657239D06C50043E775 /* SettingViewController.swift */; };
+		F6CB765A239D09F00043E775 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6CB7659239D09F00043E775 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F6CB7653239D06A30043E775 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		F6CB7655239D06B50043E775 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		F6CB7657239D06C50043E775 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		F6CB7659239D09F00043E775 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				B64CF061FE50D1F1367D1EAF /* Pods-InstagramTake5.debug.xcconfig */,
 				B9676916783399E3F5FA1936 /* Pods-InstagramTake5.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +97,7 @@
 			children = (
 				F6CB763D239D03A10043E775 /* AppDelegate.swift */,
 				F6CB763F239D03A10043E775 /* ViewController.swift */,
+				F6CB7659239D09F00043E775 /* GoogleService-Info.plist */,
 				F6CB7641239D03A10043E775 /* Main.storyboard */,
 				F6CB7644239D03A10043E775 /* Assets.xcassets */,
 				F6CB7646239D03A10043E775 /* LaunchScreen.storyboard */,
@@ -167,6 +169,7 @@
 				F6CB7648239D03A10043E775 /* LaunchScreen.storyboard in Resources */,
 				F6CB7645239D03A10043E775 /* Assets.xcassets in Resources */,
 				F6CB7643239D03A10043E775 /* Main.storyboard in Resources */,
+				F6CB765A239D09F00043E775 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
