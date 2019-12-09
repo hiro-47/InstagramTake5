@@ -117,7 +117,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
-        
+        cell.CommentButton.addTarget(self, action:#selector(handleButton2(_:forEvent:)), for: .touchUpInside)
         return cell
     }
     
@@ -157,5 +157,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     }
+    @objc func handleButton2(_ sender: UIButton, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: コメンとボタンがタップされました。")
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "Comment") as!
+        CommentViewController
+        self.present(nextView, animated: true,  completion: nil)
+    }
+    
+    
     
 }

@@ -16,4 +16,7 @@ class CommentViewController: UIViewController {
     }
     
     
+    @IBAction func returnButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

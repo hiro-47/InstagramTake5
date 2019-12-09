@@ -34,6 +34,8 @@ class PostTableViewCell: UITableViewCell {
         self.postImageView.image = postData.image
         
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+        
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
         
