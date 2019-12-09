@@ -20,6 +20,7 @@
 		F6CB7658239D06C50043E775 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB7657239D06C50043E775 /* SettingViewController.swift */; };
 		F6CB765A239D09F00043E775 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6CB7659239D09F00043E775 /* GoogleService-Info.plist */; };
 		F6CB765C239DEB580043E775 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB765B239DEB580043E775 /* Const.swift */; };
+		F6CB765E239DEDE10043E775 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CB765D239DEDE10043E775 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F6CB7657239D06C50043E775 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F6CB7659239D09F00043E775 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6CB765B239DEB580043E775 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F6CB765D239DEDE10043E775 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		F6CB7631239D03A10043E775 = {
 			isa = PBXGroup;
 			children = (
+				F6CB765D239DEDE10043E775 /* PostData.swift */,
 				F6CB765B239DEB580043E775 /* Const.swift */,
 				F6CB7657239D06C50043E775 /* SettingViewController.swift */,
 				F6CB7655239D06B50043E775 /* PostViewController.swift */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CB7656239D06B50043E775 /* PostViewController.swift in Sources */,
+				F6CB765E239DEDE10043E775 /* PostData.swift in Sources */,
 				F6CB7650239D06800043E775 /* LoginViewController.swift in Sources */,
 				F6CB7640239D03A10043E775 /* ViewController.swift in Sources */,
 				F6CB763E239D03A10043E775 /* AppDelegate.swift in Sources */,
