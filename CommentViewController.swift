@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
-class CommentViewController: UIViewController {
+class CommentViewController: UIViewController, UITableViewDelegate {
+    var postData: PostData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func CommentPost(_ sender: Any) {
+        var text = textField.text!
+       postData.comments.append(text)
+        let postRef = Database.database().reference().child(Const.PostPath).child(postData.id!)
+        let comments = ["comments": postData.comments]
+        postRef.updateChildValues(comments)
     }
     
     

@@ -16,7 +16,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var CommentButton: UIButton!
-    @IBOutlet weak var captionLabel2: UILabel!
+   
     override func awakeFromNib() {
         
         
@@ -33,7 +33,7 @@ class PostTableViewCell: UITableViewCell {
     func setPostData(_ postData: PostData) {
         self.postImageView.image = postData.image
         
-        self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        self.captionLabel.text = "\(postData.name!) : \(postData.caption!) : \n\(postData.comments)"
         
         
         let likeNumber = postData.likes.count
