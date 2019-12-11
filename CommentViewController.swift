@@ -19,11 +19,18 @@ class CommentViewController: UIViewController, UITableViewDelegate {
     }
     @IBOutlet weak var textField: UITextField!
     @IBAction func CommentPost(_ sender: Any) {
+        let name = Auth.auth().currentUser?.displayName
+        
         var text = textField.text!
-       postData.comments.append(text)
+        
+        
+       text = "\(name!):\(textField.text!)"
+        postData.comments.append(text)
         let postRef = Database.database().reference().child(Const.PostPath).child(postData.id!)
         let comments = ["comments": postData.comments]
         postRef.updateChildValues(comments)
+        
+         UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     

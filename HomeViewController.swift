@@ -169,8 +169,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let storyboard: UIStoryboard = self.storyboard!
         let  nextView = storyboard.instantiateViewController(withIdentifier: "Comment") as!
         CommentViewController
-        
-        
         let nextview = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as!
         CommentViewController
             nextView.postData = postData
